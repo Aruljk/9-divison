@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+// for(i=1;i<=200;i++){
+
+
+//     if(i%9==0){
+
+//     let res=i.toString()
+ 
+//         if(res.length==1){
+//             let sum=parseInt(res)
+//             console.log(sum)
+//         }else if(res.length==2){
+           
+//           let a=res[0]
+//            let b=res[1]
+//            if(a < b){
+//             let sum=parseInt(a+b)
+//                 console.log(sum);
+//            }
+//         }
+//    else if(res.length==3){
+//         let a =res[0]
+//         let b=res[1]
+//         let c=res[2]
+
+//         if(a < b && a < c){
+//             if(b < c){
+//               let sum=parseInt(a+b+c)
+//               console.log(sum);
+//             }
+           
+//         }
+//     }
+// }
+// }
+
+
+for(i=1;i<=200;i++){
+
+    if(i%9==0){
+        let res=i.toString();
+
+        if(res.length==1){
+            let sum=parseInt(res);
+            console.log(sum);
+        }
+        else if(res.length==2){
+            let a=res[0];
+            let b=res[1];
+            let sum=parseInt(a+b);
+            if(a<b){
+                console.log(sum);  
+            }
+            
+        }
+        else if(res.length==3){
+            let a=res[0];
+            let b=res[1];
+            let c=res[2];
+            if((a<b)&&(a<c)){
+                if(b<c){
+                    let sum=parseInt(a+b+c)
+                    console.log(sum);
+                }
+            }
+        }
+        
+    }
+}
+    </script>
+</body>
+</html>
